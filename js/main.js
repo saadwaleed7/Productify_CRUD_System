@@ -88,8 +88,8 @@ function dispalyProducts() {
         <td>${productsContainer[i].price}</td>
         <td>${productsContainer[i].category}</td>
         <td>${productsContainer[i].desc}</td>
-        <td><button onclick= "updateProduct(${i})" class="btn btn-outline-info">Ubdate</button></td>
-        <td><button onclick= "deletProduct(${i})" class="btn btn-outline-danger">Delet</button></td>
+        <td><button onclick= "updateProduct(${i})" class="btn btn-outline-info">Update</button></td>
+        <td><button onclick= "deletProduct(${i})" class="btn btn-outline-danger">Delete</button></td>
         </tr>`;
   }
   document.getElementById("tableBody").innerHTML = cartoona;
@@ -136,8 +136,8 @@ function searchProduct(term) {
             <td>${productsContainer[i].price}</td>
             <td>${productsContainer[i].category}</td>
             <td>${productsContainer[i].desc}</td>
-            <td><button onclick= "updateProduct(${i})" class="btn btn-outline-info">Ubdate</button></td>
-            <td><button onclick= "deletProduct(${i})" class="btn btn-outline-danger">Delet</button></td>
+            <td><button onclick= "updateProduct(${i})" class="btn btn-outline-info">Update</button></td>
+            <td><button onclick= "deletProduct(${i})" class="btn btn-outline-danger">Delete</button></td>
             </tr>`;
     }
   }
@@ -146,7 +146,7 @@ function searchProduct(term) {
 
 function test() {
  
-  console.log("Ubdate");
+  console.log("Update");
 }
 
 
