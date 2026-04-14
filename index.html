@@ -1,0 +1,106 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <div class="container-md w-75 mx-auto my-4 shadow-sm p-4 rounded bg-light">
+      <!-- العنوان -->
+      <div class="text-center mb-4">
+        <h1 class="h2 fw-bold text-primary">Productify</h1>
+        <div class="custom-divider"></div>
+      </div>
+
+      <!-- Inputs في صفوف مرنة -->
+      <div class="row g-3">
+        <div class="col-12">
+          <label for="productName" class="form-label">Product Name:</label>
+          <input
+            oninput="validateInput()"
+            class="form-control"
+            type="text"
+            id="productName"
+          />
+          <small id="errorInputNameId" class="text-danger d-none"
+            >Invalid Name</small
+          >
+        </div>
+
+        <div class="col-md-12">
+          <label for="productPrice" class="form-label">Price:</label>
+          <input
+            oninput="validateInput()"
+            class="form-control"
+            type="number"
+            id="productPrice"
+          />
+          <small id="errorInputPriceId" class="text-danger d-none"
+            >Invalid Price</small
+          >
+        </div>
+
+        <div class="col-md-12">
+          <label for="productCategory" class="form-label">Category:</label>
+          <input
+            oninput="validateInput()"
+            class="form-control"
+            type="text"
+            id="productCategory"
+          />
+          <small id="errorInputCategId" class="text-danger d-none"
+            >Invalid Category</small
+          >
+        </div>
+
+        <div class="col-12">
+          <label for="productDesctiption" class="form-label"
+            >Description:</label
+          >
+          <textarea
+            style="resize: none"
+            class="form-control"
+            id="productDesctiption"
+            rows="3"
+          ></textarea>
+        </div>
+
+        <div class="col-12 text-center">
+          <button
+            id="btn"
+            onclick="addProduct()"
+            class="btn btn-primary w-100 py-2 mt-3"
+            disabled
+          >
+            Add Product
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-md w-100 mx-auto my-4">
+      <div class="table-responsive">
+        <table class="table table-hover text-center">
+          <thead class="table-dark">
+            <tr>
+              <th>Index</th>
+              <th>Name</th>
+              <th>Price</th>
+              <th>Category</th>
+              <th>Desc</th>
+              <th>Update</th>
+              <th>Delete</th>
+            </tr>
+          </thead>
+          <tbody id="tableBody">
+            <!-- البيانات بتنزل هنا من الـ JS -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

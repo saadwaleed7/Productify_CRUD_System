@@ -1,0 +1,10 @@
+
+.custom-divider {
+    display: block;
+    width: 60px;
+    height: 5px;
+    background: linear-gradient(to right, #0d6efd, #0dcaf0);
+    margin: 10px auto;
+    border-radius: 50px;
+    opacity: 0.8;
+}
